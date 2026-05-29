@@ -1,3 +1,28 @@
+@font-face {
+	font-family: roboto-reg;
+	src: url(fonts/roboto-regular.ttf);
+}
+
+@font-face {
+	font-family: roboto-italic;
+	src: url(fonts/roboto-italic.ttf);
+}
+
+@font-face {
+	font-family: roboto-bolditalic;
+	src: url(fonts/roboto-bolditalic.ttf);
+}
+
+@font-face {
+	font-family: shade;
+	src: url(fonts/shade.ttf);
+}
+
+@font-face {
+	font-family: Akira;
+	src: url(fonts/akira.otf);
+}
+
 html {
 	background-color: whitesmoke;
 }
@@ -8,9 +33,21 @@ body {
 	padding: 25px;
 	border: medium outset lightslategray;
 	background-color: aliceblue;
+
+	font-family: roboto-reg, Arial, Helvetica, sans-serif;
 }
 
 h1 {
 	color: darkslategray;
 	text-align: center;
+	font-family: Akira, Arial;
+}
+
+img {
+	display: block;
+	margin: 0px auto;
+}
+
+strong {
+	font-family: Akira;
 }
