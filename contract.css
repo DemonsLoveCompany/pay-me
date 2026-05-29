@@ -1,8 +1,16 @@
+html {
+	background-color: whitesmoke;
+}
+
 body {
 	width: 500px;
-	margin: 8px auto;
+	margin: 50px auto;
+	padding: 25px;
+	border: medium outset lightslategray;
+	background-color: aliceblue;
 }
 
 h1 {
-	color: forestgreen;
+	color: darkslategray;
+	text-align: center;
 }
