@@ -1,0 +1,9 @@
+table {
+	border: medium solid royalblue;
+}
+th {
+	border: thin solid greenyellow;
+}
+td {
+	border: thin dotted yellow;
+}
