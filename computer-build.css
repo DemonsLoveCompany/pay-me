@@ -6,4 +6,5 @@ th {
 }
 td {
 	border: thin dotted yellow;
+	padding-right: 9px;
 }

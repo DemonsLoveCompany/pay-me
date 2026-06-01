@@ -8,7 +8,13 @@
 <body>
 	<img src="all-out.png" alt="All Out Font|Image" width="1727px" height="911" id="all-out">
 	<h1>All Out Contract</h1>
-	<p>This agreement signed on <span id="date-update">2026-xx-xx</span> between Demons Love Company owner Chris Trombly (hereafter referred to as "DLC" and <span id="name-update">______Update Name Feature</span> (hereafter referred to as "Parent").</p>
+	<p>This agreement signed on 
+	<span id="date-update">
+	<script>
+		const date = new Date();
+		document.getElementById("date-update").innerHTML = date.toDateString();
+	</script>
+	</span> between Demons Love Company owner Chris Trombly (hereafter referred to as "DLC" and <span id="name-update">______Update Name Feature</span> (hereafter referred to as "Parent").</p>
 	<p>Due to DLC's successful completion of DLC#000, DLC#-001 & DlC#-002, without payment upon completion according to the understanding of DLC with <strong>parent</strong>. Parent upon signing All or Nothing contract agrees to the terms defined in the following paragraph.</p>
 	<p>The term of this agreement is for <em>one year</em>.
 	<p>Parent agrees to the following:</p>
