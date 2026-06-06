@@ -3,6 +3,12 @@ $case = 'NZXT';
 $motherboard = 'MSI MEG';
 $cpu = 'AMD Ryzen 7';
 
+$dsn = 'mysql:host=localhost;dbname=contract_signing';
+$username = 'root';
+$password = 'Squid';
+
+$name = $_GET['name']; //http://localhost/DLC/-001.php?name=Christopher
+
 ?>
 
 <!DOCTYPE html>
@@ -17,8 +23,8 @@ $cpu = 'AMD Ryzen 7';
 		<span class="parts">
 			<ul>
 				<li>Case: <?php echo $case; ?></li>
-				<li>Motherboard: </li>
-				<li>CPU: </li>
+				<li>Motherboard: <?php echo $motherboard; ?></li>
+				<li>CPU: <?php echo $cpu; ?></li>
 				<li>CPU Cooler: </li>
 				<li>GPU: </li>
 				<li>RAM: </li>
@@ -33,5 +39,8 @@ $cpu = 'AMD Ryzen 7';
 
 		</span>
 	</div>
+
+
+	<h1><?php echo $name; ?></h1>
 </body>
 </html>
