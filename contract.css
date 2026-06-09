@@ -24,7 +24,8 @@
 }
 
 html {
-	background-color: whitesmoke;
+	background-color: black;
+	background-image: url(skull-straw.ico);
 }
 
 body {
