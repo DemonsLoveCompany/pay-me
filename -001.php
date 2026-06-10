@@ -13,6 +13,8 @@ try {
 	$darkShot = 'SELECT * FROM contract_data';
 	$output = $db->prepare($darkShot);
 	$output->execute();
+	$contract = $output->fetch();
+	$output->closeCursor();
 }
 catch (PDOException $e) {
 	$error_message = $e->getMessage();
@@ -55,6 +57,6 @@ $name = $_GET['name']; //http://localhost/DLC/-001.php?name=Christopher
 
 	<h1><?php echo $name; ?></h1>
 	<h2><?php echo $error_message ?></h2>
-	<p><?php echo $name; ?></p>
+	<p><?php echo $contract[2]; ?></p>
 </body>
 </html>
