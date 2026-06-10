@@ -3,9 +3,18 @@ $case = 'NZXT';
 $motherboard = 'MSI MEG';
 $cpu = 'AMD Ryzen 7';
 
+
 $dsn = 'mysql:host=localhost;dbname=contract_signing';
 $username = 'root';
 $password = 'Squid';
+try {
+	$db = new PDO($dsn, $username, $password);
+	$error_message = '<p>It worked!</p>';
+}
+catch (PDOException $e) {
+	$error_message = $e->getMessage();
+}
+
 
 $name = $_GET['name']; //http://localhost/DLC/-001.php?name=Christopher
 
@@ -42,5 +51,6 @@ $name = $_GET['name']; //http://localhost/DLC/-001.php?name=Christopher
 
 
 	<h1><?php echo $name; ?></h1>
+	<h2><?php echo $error_message ?></h2>
 </body>
 </html>
