@@ -23,8 +23,8 @@ $query = 'INSERT INTO contract_data
 $statement = $db->prepare($query);
 $statement->bindValue(':insert_id', $insert_id);
 $statement->bindValue(':name', $name);
-$statement->bindValue('date', $date);
-$statement->bindValue('witness', $witness);
+$statement->bindValue(':date', $date);
+$statement->bindValue(':witness', $witness);
 
 $statement->execute();
 $statement->closeCursor();
