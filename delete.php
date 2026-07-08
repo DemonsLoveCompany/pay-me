@@ -10,7 +10,7 @@ $password = 'Squid';
 $db = new PDO($dsn, $username, $password);
 
 // PHP Variables
-$delete_id = 2;
+$delete_id = 7;
 $query = 'DELETE FROM contract_data 
 			 WHERE contract_ID = :delete_id';
 

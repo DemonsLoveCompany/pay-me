@@ -9,10 +9,10 @@ $password = 'Squid';
 $db = new PDO($dsn, $username, $password);
 
 // PHP Variables
-$insert_id = 2;
-$name = 'SquidBoy';
-$date = 'Go-Kart Glory Days';
-$witness = 'The Demon';
+$insert_id = 7;
+$name = 'DemonBoy';
+$date = 'Pyro Stunt Music Days';
+$witness = 'The Squid';
 
 
 $query = 'INSERT INTO contract_data

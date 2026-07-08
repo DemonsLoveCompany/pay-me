@@ -12,7 +12,7 @@ $db = new PDO($dsn, $username, $password);
 $update_id = 2;
 $name = 'DemonBoy';
 $date = 'RockStar Pyro Concept stalling days';
-$witness = 'DeadMan';
+$witness = 'DeadMan1';
 
 
 $query = 'UPDATE contract_data

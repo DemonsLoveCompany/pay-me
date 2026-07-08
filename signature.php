@@ -2,6 +2,8 @@
 
 // PHP Variables for the PDO Object ~ to connect to a database
 $dsn = 'mysql:host=localhost;dbname=contract_signing';
+// $username = 'admin';
+// $password = '';
 $username = 'root';
 $password = 'Squid';
 
