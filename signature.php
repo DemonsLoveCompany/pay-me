@@ -2,8 +2,8 @@
 
 // PHP Variables for the PDO Object ~ to connect to a database
 $dsn = 'mysql:host=localhost;dbname=contract_signing';
-// $username = 'admin';
-// $password = '';
+//$username = 'admin';
+//$password = 'VGjg6CyFtzVrxsLL';
 $username = 'root';
 $password = 'Squid';
 
@@ -11,9 +11,10 @@ $password = 'Squid';
 $db = new PDO($dsn, $username, $password);
 
 // PHP $_POST Array Data
-$name = $_POST['name'];
-$date = $_POST['sign_date'];
-$witness = $_POST['witness'];
+//$name = $_POST['name']; //Legacy $_POST
+$name = filter_input(INPUT_POST, 'name'); //Security Basics POST attempt
+$date = filter_input(INPUT_POST, 'sign_date');
+$witness = filter_input(INPUT_POST, 'witness');
 
 $query = 'INSERT INTO contract_data
 				(name, sign_date, witness)

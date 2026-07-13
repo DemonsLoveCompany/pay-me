@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/X-icon" href="skull-straw.ico">
+	<title>DLComputers Vote</title>
+	<link rel="stylesheet" href="contract.css">
+</head>
+<body>
+	
+	<h1>DLComputers Vote</h1>
+
+	<h2>Introduction</h2>
+	<p>	
+		There is a growing rift between an <em>independent</em> <strong>Chris
+		</strong> and the <em>party</em> <strong>Trombly</strong> as to wether he should be enabled to build & sell liquid cooled computers for a living.
+	</p>
+
+
+	<h2>DLComputer Explainer:</h2>
+	<p>
+
+	</p>
+
+
+
+	<p>
+		This vote signed on 
+		<span id="date-update">
+		<script>
+			const date = new Date();
+			document.getElementById("date-update").innerHTML = date.toDateString();
+		</script>
+		</span> 
+		by _____. 
+	</p>
+
+	<form id="contract-signing" action="signature.php" method="post">
+		<p>NAME: <input type="text" name="name"></p>
+		<p>DATE: <input type="text" name="sign_date"></p>
+		<p>WITNESS: <input type="text" name="witness"></p>
+		<input type="submit" id="contract-submit" value="Contract-submit">
+	</form>
+
+	<img src="" alt="Logo Watermark">
+
+
+</body>
+</html>
